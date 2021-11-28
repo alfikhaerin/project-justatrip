@@ -1225,6 +1225,24 @@ input[type="checkbox"] {
 /****************************/
 /*     10. Testimonials     */
 /****************************/
+.abouting {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.abouting h2 {
+    padding-bottom: 2rem;
+}
+.abouting p {
+    font-size: larger;
+}
+.abouting img {
+    padding-top: 5rem;
+}
+.testimoning {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
 .slider {
     padding-top: 4.375rem;
     padding-bottom: 3.5rem;
@@ -1631,8 +1649,10 @@ input[type="checkbox"] {
     margin-bottom: 3rem;
 }
 
-.counter .image-container img {
+.image-container img {
     border-radius: 0.25rem;
+    height: 10%;
+    width: 100%;
 }
 
 .counter .section-title {
@@ -2445,3 +2465,51 @@ a:hover.back-to-top {
     /* end of navigation */
 }
 /* end of min-width width 1200px */
+
+.video {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.video.kecil {
+    width: 100%;
+}
+
+#terbaru .video .cover img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; /* Dipaksa tarik kesemua sudut*/
+    object-fit: cover; /* Ditampilkan sebutuhnya */
+    /* object-fit: fill; /* Mengisi semua sudut */
+    /* object-fit: scale-down; */
+}
+
+#terbaru .video .overlay {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#terbaru .video .overlay img {
+    width: 100px;
+    height: 100px;
+}
+
+#terbaru .video .overlay .article-title {
+    padding: 1rem;
+    font-weight: 400;
+}
+
+#terbaru .video .overlay .article-title a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+}

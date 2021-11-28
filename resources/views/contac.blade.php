@@ -1,9 +1,5 @@
-@extends('layouts.main')
+@extends('layouts.contac')
 
 @section('container')
-
-<div class="container">
-    <h1>contac</h1>
-
-</div>
+<h1>kfkb</h1>
 @endsection

@@ -20,7 +20,7 @@
 
 
     <!-- Website Title -->
-    <title>Labuhan bajo - Pt Just a Trip</title>
+    <title>Just aTrip | {{ $title }} </title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
@@ -68,26 +68,28 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/">HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/menu-package">Tour Package</a>
+                    <a class="nav-link page-scroll {{($title === "menu Package")? 'active':''}} " href=" /menu-package">Tour Package</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/Galery">Galery</a>
+                    <a class="nav-link page-scroll {{($title === "galery")? 'active':''}} " href="/Galery">Galery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/testimoni">Testimonials</a>
+                    <a class="nav-link page-scroll {{($title === "testimoni")? 'active':''}}" href="/Testimonial">Testimonials</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/about">about</a>
+                    <a class="nav-link page-scroll {{($title === "about")? 'active':''}}" href="/about">about</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/Contact">contac</a>
+                    <a class="nav-link page-scroll {{($title === "contat")? 'active':''}}" " href=" https://beacons.ai/booking.info.justatrip/">contac</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll {{($title === "blog")? 'active':''}}" " href=" /blog">Blog</a>
                 </li>
             </ul>
-
             <!-- Dropdown Menu 
         <!        <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
@@ -135,6 +137,27 @@
     @yield('container')
     <!-- content -->
     <!-- Footer -->
+    <div id="terbaru" class="wrapper">
+
+        <div class="container">
+
+            <div class="content">
+
+                <div class="video">
+
+                    <!-- <object height="100%" width="100%" data="https://youtube.com/embed/m7EarTCByZQ"></object> -->
+                    <video width="100%" height="100%" controls loop>
+                        <source src="vidio/Jus_A_Trip.mp4" type="video/webm">
+                        Browser Anda tidak mendukung video
+                    </video>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -149,6 +172,12 @@
                         <h4>Hubungi Kami</h4>
                         <ul class="list-unstyled li-space-lg white">
                             <li>
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="white" href="#your-link">Facebook</a>
+                                    </div>
+
+                                </div>
                                 <a class="white" href="#your-link">Facebook</a>
 
                             </li>

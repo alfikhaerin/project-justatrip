@@ -20,7 +20,7 @@
 
 
     <!-- Website Title -->
-    <title>Labuhan bajo - Pt Just a Trip</title>
+    <title>Just aTrip | Home</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
@@ -68,34 +68,38 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/">HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll {{($title === "Home")? 'active':''}}" href="/">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/menu-package">Tour Package</a>
+                    <a class="nav-link page-scroll " href="/menu-package">Tour Package</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="/Galery">Galery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/testimoni">Testimonials</a>
+                    <a class="nav-link page-scroll" href="/Testimonial">Testimonials</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="/about">about</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/Contact">contac</a>
+                    <a class="nav-link page-scroll {{($title === "contat")? 'active':''}}" " href=" https://beacons.ai/booking.info.justatrip/">contac</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll {{($title === "blog")? 'active':''}}" " href=" /blog">Blog</a>
+                </li>
+            </ul>
             </ul>
 
             <!-- Dropdown Menu 
-        <!        <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
+        <!        <li class=" nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                        </div>
                 </li>-->
             <!-- end of dropdown menu -->
 
@@ -132,9 +136,10 @@
                                 <!--<span id="js-rotating">Jalan, Makan, Holiday</span>-->
                             </h1>
                             <h2>Your Travel Buddy</h2>
-                            <p class="p-heading p-large">ARE YOU READY TO DISCOVER KOMODO?
-                                Once you have traveled, the voyage never ends, but is played out over and over again in the quietest chambers. The mind can never break off from the journey.</p>
-                            <a class="btn-solid-lg page-scroll" href="#intro">Tour</a>
+                            <p class="p-heading p-large">ARE YOU READY TO DISCOVER Indonesia Eastern?
+                                <br> Once you have traveled, the voyage never ends, but is played out over and over again in the quietest chambers. The mind can never break off from the journey.
+                            </p>
+                            <a class="btn-solid-lg page-scroll" href="https://beacons.ai/booking.info.justatrip/">Tour</a>
                         </div>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
