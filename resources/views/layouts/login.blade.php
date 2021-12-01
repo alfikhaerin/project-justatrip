@@ -23,6 +23,7 @@
     <title>Just aTrip | {{ $title }} </title>
 
     <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -35,24 +36,24 @@
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- Favicon  -->
-    <link rel="icon" href="images/tabsjustatrip.jpeg" style="width: 100%" >
+    <link rel="icon" href="images/hitam-logo-justatrip.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
 
     <!-- Preloader -->
-    <div class="spinner-wrapper">
+    {{-- <div class="spinner-wrapper">
         <div class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
             <div class="bounce3"></div>
         </div>
-    </div>
+    </div> --}}
     <!-- end of preloader -->
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    {{-- <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
@@ -90,7 +91,9 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll {{($title === "blog")? 'active':''}}" " href=" /blog">Blog</a>
                 </li>
-            </ul>
+            </ul>   
+        </div>
+    </nav> --}}
             <!-- Dropdown Menu 
         <!        <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
@@ -119,8 +122,7 @@
                     </a>
                 </span>
             </span> -->
-        </div>
-    </nav> <!-- end of navbar -->
+      <!-- end of navbar -->
     <!-- end of navbar -->
     <!-- Header -->
     <header id="header" class="headering">
@@ -138,7 +140,7 @@
     @yield('container')
     <!-- content -->
     <!-- Footer -->
-    <div id="terbaru" class="wrapper">
+    {{-- <div id="terbaru" class="wrapper">
 
         <div class="container">
 
@@ -155,9 +157,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
-    </footer>
+    {{-- </footer>
     <!-- Footer -->
     <div class="footer">
         <div class="container">
@@ -228,10 +230,10 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of footer -->
-    <!-- end of footer -->
+    <!-- end of footer --> --}}
 
 
-    <!-- Copyright -->
+    {{-- <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
@@ -241,10 +243,11 @@
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
     </div> <!-- end of copyright -->
-    <!-- end of copyright -->
+    <!-- end of copyright --> --}}
 
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->

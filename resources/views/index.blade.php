@@ -23,6 +23,7 @@
     <title>Just aTrip | Home</title>
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -34,7 +35,7 @@
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- Favicon  -->
-    <link rel="icon" href="images/hitam-logo-justatrip.png">
+    <link rel="icon" href="images/tabsjustatrip.jpeg" style="width: 100%" >
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -90,7 +91,12 @@
                     <a class="nav-link page-scroll {{($title === "blog")? 'active':''}}" " href=" /blog">Blog</a>
                 </li>
             </ul>
-            </ul>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="/login-admin">Login</a>
+            </li>
+        </ul>
 
             <!-- Dropdown Menu 
         <!        <li class=" nav-item dropdown">
@@ -163,7 +169,7 @@
                     <!-- Card -->
                     <div class="card">
                         <div class="card-image">
-                            <a href="index.blade.php"> <img class="img-fluid" src="images/star-from-sailingkomodo.png" alt="alternative"></a>
+                            <a href="index.blade.php"> <img class="img-fluid" src="images/package/OverlandFlores.jpg" alt="alternative"></a>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -171,7 +177,7 @@
                     <!-- Card -->
                     <div class="card">
                         <div class="card-image">
-                            <a href=""> <img class="img-fluid" src="images/star-from-roadtrpsumba.png" alt="alternative"></a>
+                            <a href=""> <img class="img-fluid" src="images/package/Road-Trip-Sumba.jpg" alt="alternative"></a>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -179,7 +185,7 @@
                     <!-- Card -->
                     <div class="card">
                         <div class="card-image">
-                            <a href=""><img class="img-fluid" src="images/star-from-overlandflores.png" alt="alternative"></a>
+                            <a href=""><img class="img-fluid" src="images/package/Sailing-Komodo.jpg" alt="alternative"></a>
                         </div>
                     </div>
                     <!-- end of card -->

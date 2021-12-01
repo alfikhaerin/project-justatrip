@@ -23,19 +23,18 @@
     <title>Just aTrip | {{ $title }} </title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{asset('css/fontawesome-all.css')  }}" rel="stylesheet">
+    <link href="{{asset('css/swiper.css')  }}" rel="stylesheet">
+    <link href="{{asset('css/magnific-popup.css')  }}" rel="stylesheet">
+    <link href="{{asset('css/styles.css')  }}" rel="stylesheet">
 
     <!-- Favicon  -->
-    <link rel="icon" href="images/tabsjustatrip.jpeg" style="width: 100%" >
+    <link rel="icon" href="images/hitam-logo-justatrip.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -148,7 +147,7 @@
 
                     <!-- <object height="100%" width="100%" data="https://youtube.com/embed/m7EarTCByZQ"></object> -->
                     <video width="100%" height="100%" controls loop>
-                        <source src="vidio/Jus_A_Trip.mp4" type="video/webm">
+                        <source src="{{ asset('vidio/Jus_A_Trip.mp4') }}" type="video/webm">
                         Browser Anda tidak mendukung video
                     </video>
 
@@ -247,16 +246,17 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{{ asset('js/popper.min.js') }}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
+    <script src="{{ asset('js/jquery.easing.min.js') }}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{{ asset('js/swiper.min.js') }}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{{ asset('js/jquery.magnific-popup.js') }}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{{ asset('js/morphext.min.js') }}"></script> <!-- Morphtext rotating text in the header -->
+    <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script> <!-- Isotope for filter -->
+    <script src="{{ asset('js/validator.min.js') }}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{{ asset('js/scripts.js') }}"></script> <!-- Custom scripts -->
 </body>
 
 </html>
+"{{ asset('css/styles.css') }}"
